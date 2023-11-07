@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Money-master</title>
+    <link rel="stylesheet" href="/styles/app.css" />
+    <script
+      src="https://kit.fontawesome.com/a2ebb13313.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- header section start here  -->
+    <header>
+      <h1 class="ms-3 mt-4 text-center fs-1 fw-bold">
+        Money Master
+        <span
+          ><i
+            class="fa-solid fa-sack-dollar fa-beat fa-lg"
+            style="color: #ffd700"
+          ></i
+        ></span>
+      </h1>
+    </header>
+
+    <!-- header section end here  -->
+
+    <!-- main section start here  -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid" src="./money.png" alt="" srcset="" />
+        </div>
+        <div class="col-6 fs-1 fw-bold">
+          <div>
+            <h1 class="text-center">Income</h1>
+            <div class="input-group">
+              <span class="input-group-text text-white bg-primary">Income</span>
+              <input
+                id="income-input"
+                type="text"
+                aria-label="First name"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="mt-2">
+              <h1 class="text-center">My Expenses</h1>
+              <div class="input-group">
+                <span class="input-group-text text-white bg-primary">food</span>
+                <input
+                  id="food"
+                  type="text"
+                  aria-label="expense"
+                  class="form-control"
+                />
+              </div>
+              <div class="input-group mt-2">
+                <span class="input-group-text text-white bg-primary">Rent</span>
+                <input id="rent" type="text" aria-label="expense" class="form-control" />
+              </div>
+              <div class="input-group mt-2">
+                <span class="input-group-text text-white bg-primary"
+                  >Clothes</span
+                >
+                <input id="chothes" type="text" aria-label="expense" class="form-control" />
+              </div>
+
+              <div class="container bg-light">
+                <div class="col-md-12 text-center">
+                  <button
+                    id="calculate-all"
+                    type="button"
+                    class="btn btn-danger"
+                  >
+                    calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- total expense  -->
+          <h2 class="fs-3 fst-italic mt-4">
+            Total expense : <span id="total-expense">00</span>
+          </h2>
+          <h2  class="fs-3 fst-italic mt-4">Balance : <span id="Balance">00</span></h2>
+          <div>
+            <div class="container bg-light">
+              <div class="col-md-12 text-center">
+                <div class="container bg-light">
+                  <div class="container bg-light">
+                    <div class="col-md-12 text-center">
+                      <button  type="button" class="btn btn-warning">
+                        Save your percentage
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <input id="percentage" type="text" class="btn btn-dark" value="20" />
+                    <span> %</span>
+                    <button id="saving" type="button" class="btn btn-danger">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="fs-3 fst-italic mt-4">
+                Saving Amount : <span id="saving-amount">00</span>
+              </h2>
+            </div>
+            <div>
+              <h2 class="fs-3 fst-italic mt-4">
+                Remaining Balance : <span id="Remaining">00</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section end here  -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
